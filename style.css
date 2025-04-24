@@ -1,0 +1,876 @@
+:root{
+    /*### Primary*/
+
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+
+    /*### Neutral*/
+
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: "Open sans";
+}
+
+.container{
+    width: 24em;
+    padding: 1.5em;
+    min-height: fit-content;
+    background-color: white;
+}
+                    /*------header-----*/
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1em;
+    padding: 0;
+}
+header img{
+    width: 30%;
+    height: 25%;
+    margin-top: 0.5em;
+}
+header h1{
+    font-size: 0.6em;
+    color: var(--Pink);
+    background-color: white;
+    padding: 0.4em 2em;
+    font-weight: 500;
+    border: 1px solid var(--Pink);
+    border-radius: 2em;
+}
+header h1:hover{
+    cursor: pointer;
+    color: var(--Light-Pink);
+}
+                    /*------community-----*/
+.community{
+    padding: 1.5em 2.5em;
+    text-align: center;
+    margin: 5em 0;
+}
+.community img{
+    width: 100%;
+    margin-top: 4em;
+}
+.community h1{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 1.35em;
+    margin: 0.75em 0;
+}
+.community p{
+    font-size: 0.75em;
+    font-weight: 400;
+}
+.community h2{
+    display: inline-block;
+    margin: 4em 0;
+    background-color: var(--Pink);
+    font-size: 0.75em;
+    color: white;
+    padding: 1em 3em;
+    font-weight: 400;
+    border-radius: 2em;
+}
+.community h2:hover{
+    cursor: pointer;
+    background-color: var(--Light-Pink);
+}
+                    /*------statistics-----*/
+.statistics{
+    justify-items: center;
+    margin: 0 5em;
+    margin-bottom: 8em;
+}
+.statistics img{
+    width: 17.5%;
+}
+.statistics h1{
+    font-size: 3.75em;
+}
+.statistics h2{
+    font-size: 0.85em;
+    text-align: center;
+    color: gray;
+    font-weight: 600;
+}
+.messages h1{    
+    font-size: 3.25em;
+    text-align: center;
+}
+.messages h2{
+    margin: 0 5em;
+}
+.messages img{
+    width: 12.5%;;
+    margin-left: 1.25em;
+    margin-top: 6em;
+}
+                    /*------grow-----*/
+.grow{
+    text-align: center;
+    padding: 1.75em 2.75em;
+    margin: auto -1.5em;
+    color: var(--Very-Dark-Cyan);
+    background-color: var(--Very-Pale-Blue);
+    position: relative;
+}
+#top-desktop, #bottom-desktop{
+    display: none;
+}
+#top-mobile{
+    position: absolute;
+    top: -9em;
+    left: -2em;
+    width: 117%;
+    margin: 0;
+}
+.grow img{
+    width: 100%;
+    margin-top: 3em;
+    padding: 2em;
+}
+.grow h1{
+    font-family: Poppins;
+    font-size: 1.25em;
+    margin: 1em auto;
+}
+.grow p{
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+#bottom-mobile{
+    position: absolute;
+    margin: 0;
+    width: 117%;
+    left: -2em;
+    bottom: -5em; 
+}
+                    /*------conversation-----*/
+.conversation{
+    text-align: center;
+    padding: 1.25em 2.25em;
+    color: var(--Very-Dark-Cyan);
+}
+.conversation img{
+    width: 100%;
+    margin-top: 8em;
+    padding: 2em;
+}
+.conversation h1{
+    font-family: Poppins;
+    font-size: 1.25em;
+    margin: 1em auto;
+}
+.conversation p{
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-bottom: 16em;
+}
+                    /*------your-user-----*/
+.your-users{
+    text-align: center;
+    padding: 1.25em 2.25em;
+    margin: auto -1.5em;
+    color: var(--Very-Dark-Cyan);
+    background-color: var(--Very-Pale-Blue);
+    position: relative;
+}
+#user-top-desktop, #user-bottom-desktop{
+    display: none;
+}
+#user-top-mobile{
+    position: absolute;
+    top: -8.5em;
+    left: -2em;
+    width: 117%;
+    margin: 0;
+}
+.your-users img{
+    width: 100%;
+    margin-bottom: 1.5em;
+    padding: 2em;
+}
+.your-users h1{
+    font-family: Poppins;
+    font-size: 1.25em;
+    margin: 1em auto;
+}
+.your-users p{
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-bottom: 7em;
+}
+#user-bottom-mobile{
+    position: absolute;
+    margin: 0;
+    width: 117%;
+    left: -2em;
+    bottom: -8em; 
+}
+                    /*------Ready-to-build-----*/
+.ready-to-build{
+    margin: 10em 0;
+    text-align: center;
+    color: var(--Very-Dark-Cyan);
+}
+.ready-to-build h1{
+    font-family: poppins;
+    font-size: 1.45em;
+    margin: 1.5em 0;
+}
+.ready-to-build h2{
+    display: inline-block;
+    font-size: 0.75em;
+    background-color: var(--Pink);
+    color: white;
+    border-radius: 2em;
+    padding: 1em 3em;
+    font-weight: 600;
+}
+.ready-to-build h2:hover{
+    cursor: pointer;
+    background-color: var(--Light-Pink);
+}
+                    /*------footer-----*/
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3.5em;
+    background-color: var(--Very-Dark-Cyan);
+    margin: auto -1.5em;;
+    position: relative;
+    margin-top: 16em;
+}
+#footer-desktop{
+    display: none;
+}
+#footer-mobile{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: -3em;
+}
+.newsletter{
+    color: var(--Very-Pale-Blue);
+    margin-top: 1.5em;
+}
+.newsletter h1{
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+.newsletter p{
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 1.25em 0;
+}
+.newsletter input{
+    width: 100%;
+    height: 3em;
+    border-radius: 0.25em;
+    border: 0.001em solid black;
+    margin: 1em 0;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.subscribe h2{
+    background-color: var(--Pink);
+    font-size: 1em;
+    border-radius: 0.5em;
+    padding: 0.75em 2.5em;
+    color: white;
+    font-weight: 600;
+}
+h2:hover{
+    background-color: var(--Light-Pink);
+}
+
+.lorem{
+    margin-top: 4em;
+}
+.huddle{
+    width: 110%;
+    margin: 1.5em 0;
+    margin-bottom: -20em;
+}
+.lorem p{
+    color: var(--Very-Pale-Blue);
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.65em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+.phone, .email{
+    display: flex;
+    color: var(--Very-Pale-Blue);
+    margin: 0;
+    align-items: center;
+    gap: 1em;
+}
+.phone h1, .email h1{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+.phone img, .email img{
+    width: 5%;
+}
+
+.social-media{
+    display: flex;
+    width: 30%;
+    gap: 1em;
+    margin: 2em 0;
+}
+.media path{
+    fill:white;
+}
+.media path:hover{
+    cursor: pointer;
+    fill: aqua;
+}
+                    /*------Screen size changes to 48em-----*/
+@media (min-width: 48em){
+    .container{
+        width: 48em;
+        padding: 2em;
+    }
+                    /*------header-----*/
+    header{
+        padding: 1em;
+    }
+    header h1{
+        font-size: 1em;
+        padding: 0 3em;
+        padding-top: 0.5em;
+    }
+                    /*------community-----*/
+    .community h1{
+        font-size: 1.75em;
+    }
+    .community p{
+        font-size: 1.25em;
+    }
+    .community h2{
+        font-size: 1.25em;
+    }
+                    /*------statistics-----*/
+    .statistics{
+        margin: 12em auto;
+    }
+    .statistics img{
+        width: 25%;
+    }
+    .statistics h1{
+        font-size: 5.25em;
+    }
+    .statistics h2{
+        font-size: 1.5em;
+    }
+    .messages h1{    
+        font-size: 5.25em;
+    }
+    .messages img{
+        width: 17.5%;;
+        margin-left: 5em;
+    }
+                    /*------grow-----*/
+    .grow{
+        margin-top: 15em;
+        margin-bottom: 4em;
+    }
+    #top-mobile{
+        top: -15em;
+        width: 108%;
+    }
+    .grow h1{
+        font-size: 2.5em;
+    }
+    .grow p{
+        font-size: 1.5em;
+    }
+    #bottom-mobile{
+        width: 108%;
+        left: -2em;
+        bottom: -8em; 
+    }
+                    /*------conversation-----*/
+    .conversation{
+        margin-top: 10em;
+    }
+    .conversation h1{
+        font-size: 2.5em;
+    }
+    .conversation p{
+        font-size: 1.65em;
+    }
+                    /*------your-user-----*/
+    .your-users h1{
+        font-size: 2.5em;
+    }
+    .your-users p{
+        font-size: 1.5em;
+    }
+    #user-top-desktop, #user-bottom-desktop{
+        display: none;
+    }
+    #user-top-mobile{
+        top: -14.5em;
+        left: -2em;
+        width: 108%;
+    }
+    #user-bottom-mobile{
+        width: 108%;
+        left: -2em;
+        bottom: -14em; 
+    }
+                    /*------Ready-to-build-----*/
+    .ready-to-build{
+        margin: 20em auto;
+    }
+    .ready-to-build h1{
+        font-size: 3em;
+    }
+    .ready-to-build h2{
+        font-size: 1.5em;
+    }
+                        /*------footer-----*/
+    footer{
+        margin-top: 23em;
+    }
+    #footer-desktop{
+        display: none;
+    }
+    #footer-mobile{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: -6em;
+    }
+    .newsletter h1{
+        font-size: 2.5em;
+    }
+    .newsletter p{
+        font-size: 1.5em;
+    }
+    .newsletter input{
+        height: 5em;
+    }
+    .subscribe h2{
+        font-size: 2em;
+    }
+
+    .lorem p{
+        font-size: 1.5em;
+    }
+    .huddle{
+        margin-bottom: -48em;
+    }
+    .phone h1, .email h1{
+        font-size: 1.5em;
+    }
+    .phone img, .email img{
+        width: 6%;
+    }
+    .social-media{
+        margin-top: 4em;
+    }
+}
+                    /*------Screen size changes to 60em-----*/
+@media (min-width:60em){
+    .container{
+        width: 60em;
+    }
+                    /*------header-----*/
+    header img{
+       width: 17.5%;
+    }
+    header h1{
+        font-size: 0.75em;
+        padding: 0.5em 2.5em;
+        margin-top: 1em;
+    }
+                    /*------community-----*/
+    .community p{
+        font-size: 1em;
+        margin: auto 11em;
+    }
+    .community h2{
+        font-size: 0.85em;
+        padding: 1.25em 4.5em;
+    }
+    .community img{
+        width: 80%;
+    }
+                    /*------statistics-----*/
+    .statistics{
+        display: flex;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    .communities-formed img{
+        margin: 0;
+        width: 15%;
+    }
+    .messages img{
+        margin: 0;
+        margin-left: 2.5em;
+        width: 10%;
+    }
+    .communities-formed h1, .messages h1{
+        font-size: 4em;
+    }
+    .communities-formed h2, .messages h2{
+        font-size: 1em;
+        font-weight: 400;
+        text-align: left;
+    }
+                        /*------grow-----*/
+    .grow{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        justify-content: end;
+        align-items: center;
+    }
+    #top-mobile, #bottom-mobile{
+        display: none;
+    }
+    #top-desktop{
+        display: block;
+        position: absolute;
+        width: 108%;
+        left: -2.4em;
+        top: -8em;
+    } 
+    .grow h1{
+        font-size: 1.55em;
+        margin: 0;
+    }
+    .grow p{
+        font-size: 0.75em;
+        margin: 1em auto;
+        margin-right: 8em;
+        font-weight: 400;
+    }
+    .grow img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #bottom-desktop{
+        display: block;
+        position: absolute;
+        width: 108%;
+        left: -2.4em;
+        bottom: -7em;
+    }
+                    /*------conversation-----*/
+    .conversation{
+        display: flex;
+        text-align: left;
+        justify-content: end;
+        align-items: center;
+    }
+    .conversation img{
+        width: 50%;
+        margin: 0;
+    }
+    .conversation h1{
+        margin: 0;
+        font-size: 1.55em;
+        margin-left: 2.3em;
+    }
+    .conversation p{
+        margin: 1em auto;
+        font-size: 0.75em;
+        margin-left: 5em;
+    }
+                    /*------your-user-----*/
+    .your-users{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        align-items: center;
+        text-align: left;
+        margin: 7em -2em;
+    }
+    #user-top-mobile, #user-bottom-mobile{
+        display: none;
+    }
+    #user-top-desktop {
+        display: block;
+        position: absolute;
+        width: 106.5%;
+        left: -2em;
+        top: -8em;
+    }
+    #user-bottom-desktop{
+        display: block;
+        position: absolute;
+        width: 106.5%;
+        left: -2em;
+        bottom: -7em;
+    }
+    .your-users img{
+        width: 50%;
+        margin: 0;
+    }
+    .your-users h1{
+        margin: 0;
+        font-size: 1.55em;
+    }
+    .your-users p{
+        margin: 1em auto;
+        font-size: 0.75em;
+        margin-right: 5em;
+    }
+                    /*------Ready-to-build-----*/
+    .ready-to-build{
+        margin: 0;
+    }
+    .ready-to-build h1{
+        font-size: 1.75em;
+        margin-top: 6em;
+    }
+    .ready-to-build h2{
+        font-size: 1em;
+    }
+                    /*------footer-----*/
+    footer{
+        position: relative;
+        margin: 0 -2em;
+        margin-top: 14em;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #footer-mobile{
+        display: none;
+        padding: 5em;
+    }
+    #footer-desktop{
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: -0.0001em;
+        top: -6.5em;
+    }
+    .lorem{
+        margin: 3em auto;
+        align-content: top;
+        margin-left: 2em;
+    }
+    .huddle{
+        width: 80%;
+        margin: 0;
+    }
+    .lorem p{
+        font-size: 0.55em;
+        margin-top: -29em;
+        width: 60%;
+    }
+    .lorem h1{
+        font-size: 0.65em;
+    }
+    .social-media{
+        width: 30%;
+        margin-top: 3em;
+    }
+    .newsletter{
+        margin: 0;
+        margin-left: 8em;
+        margin-top: 3em;
+    }
+    .newsletter h1{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .newsletter p{
+        font-size: 0.6em;
+        width: 55%;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: row
+    }
+    .subscribe input{
+        width: 45%;
+        height: 2.7em;
+        border-radius: 0.5em;
+        margin: 0;
+    }
+    .subscribe h2{
+        font-size: 0.75em;
+        margin: 0 2em;
+    }
+}
+                    /*------Screen size changes to 90em-----*/
+@media (min-width:90em) {
+    .container{
+        width: 90em;
+    }
+                    /*------header-----*/
+    header{
+        padding: 2em;
+    }
+    header h1{
+        font-size: 1em;
+    }
+                    /*------community-----*/
+    .community h1{
+        font-size: 3em;
+    }
+    .community p{
+        font-size: 1.35em;
+        margin: auto 15em;
+    }
+    .community h2{
+        font-size: 1.35em;
+        margin: 3em auto;
+    }
+    .community img{
+        width: 80%;
+    }
+                    /*------statistics-----*/
+    .communities-formed img{
+        width: 25%;
+    }
+    .communities-formed h1{
+        font-size: 6em;
+    }
+    .communities-formed h2{
+        font-size: 1.5em;
+    }
+    .messages img{
+        width: 15%;
+    }
+    .messages h1{
+        font-size: 6em;
+    }
+    .messages h2{
+        font-size: 1.5em;
+    }
+                    /*------grow-----*/
+    .grow{
+        padding: 6em;
+    }
+    .grow h1{
+        font-size: 2.5em;
+    }
+    .grow p{
+        font-size: 1.05em;
+    }
+    .grow img{
+        width: 45%;
+    }
+    #top-desktop{
+        width: 105%;
+        top: -10em;
+    }
+    #bottom-desktop{
+        width: 105%;
+        bottom: -10em;
+    }
+                    /*------conversation-----*/
+    .conversation{
+        padding: 6em;
+    }
+    .conversation h1{
+        font-size: 2.5em;
+        margin-left: 3em
+    }
+    .conversation p{
+        font-size: 1.05em;
+        margin-left: 7em
+    }
+    .conversation img{
+        width: 45%;
+    }
+                    /*------your-user-----*/
+    .your-users{
+        padding: 6em;
+    }
+    .your-users h1{
+        font-size: 2.65em;
+    }
+    .your-users p{
+        font-size: 1.05em;
+    }
+    .your-users img{
+        width: 45%;
+    }
+    #user-top-desktop{
+        width: 104.5%;
+        top: -10em;
+    }
+    #user-bottom-desktop{
+        width: 104.5%;
+        bottom: -9.5em;
+    }
+                    /*------Ready-to-build-----*/
+    .ready-to-build{
+        margin: 20em auto;
+    }
+    .ready-to-build h1{
+        font-size: 2.75em;
+    }
+    .ready-to-build h2{
+        font-size: 1.55em;
+    }
+                    /*------footer-----*/
+    #footer-desktop{
+        top: -9.5em;
+    }
+    .huddle{
+        width: 75%;
+    }
+    .lorem p{
+        font-size: 1em;
+        margin-top: -27em;
+        width: 60%;
+    }
+    .lorem h1{
+        font-size: 1em;
+    }
+    .social-media{
+        width: 25%;
+        margin-top: 5em;
+    }
+    .newsletter{
+        margin-top: 4em;
+    }
+    .newsletter h1{
+        font-size: 1.75em;
+    }
+    .newsletter p{
+        font-size: 0.9em;
+        width: 60%;
+    }
+    .subscribe input{
+        width: 55%;
+        height: 3.75em;
+    }
+    .subscribe h2{
+        font-size: 1em;
+        margin: 0 2.5em;
+    }
+}
