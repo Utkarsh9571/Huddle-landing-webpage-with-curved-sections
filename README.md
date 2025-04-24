@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://utkarsh9571.github.io/Huddle-landing-webpage-with-curved-sections/]
 
 ## My process
 
